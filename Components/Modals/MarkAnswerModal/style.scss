@@ -1,0 +1,45 @@
+.points-select {
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.with-dot .player-name::after {
+  content: " • ";
+}
+.with-dot .player-name:last-child::after {
+  content: "";
+}
+
+.tooltip {
+  padding: 8px 10px;
+  font-size: 12px;
+  line-height: 12px;
+  text-shadow: 0 -1px 0 #000;
+  div {
+    padding: 4px 6px;
+  }
+}
+
+.tooltip > .tooltip-inner {
+  max-width: 100%;
+}
+
+.answer-btns {
+  @media screen and (max-width: 500px) {
+    padding-bottom: 0.6rem;
+    margin-bottom: 0.6rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .answer-btn {
+    @media screen and (max-width: 500px) {
+      width: 100%;
+    }
+    h4 {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+  }
+}

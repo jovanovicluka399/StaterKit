@@ -1,0 +1,41 @@
+.hall-of-fame {
+  .modal-header {
+    font-size: 1.75rem;
+  }
+  .modal-body {
+    padding-top: 0;
+    table {
+      background-image: url(https://image.freepik.com/free-vector/background-elegant-white-texture_23-2148438405.jpg);
+      td {
+        vertical-align: middle;
+      }
+      .trophy {
+        position: relative;
+        .gold {
+          color: gold;
+        }
+        .silver {
+          color: silver;
+        }
+        svg {
+          margin-right: -17px;
+        }
+      }
+    }
+    .btn-warning {
+      color: #fff;
+      background-color: #ff851b;
+      border-color: #ff851b;
+      font-size: 0.75rem;
+      float: right;
+      &:hover {
+        color: #fff;
+        background-color: #f47100;
+        border-color: #e76b00;
+      }
+    }
+  }
+  .btn {
+    font-size: 0.75rem;
+  }
+}

@@ -1,0 +1,273 @@
+.premium {
+  .rat-img {
+    max-width: 350px;
+  }
+  .premium-upgrade {
+    .btn-secondary {
+      font-size: 0.75rem;
+    }
+
+    .muted {
+      color: #999;
+    }
+    .card-deck {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 80px;
+      margin-bottom: 65px;
+      margin: 20px 15px;
+
+      .card {
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+        text-align: center;
+        margin: 0 15px;
+        width: 33.33%;
+
+        .card-header {
+          padding: 0.75rem 1.25rem;
+          margin-bottom: 0;
+          background-color: rgba(0, 0, 0, 0.03);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+
+          h4 {
+            margin: 0;
+          }
+        }
+
+        .card-body {
+          .btn {
+            margin: 10px 0;
+          }
+          color: #161e2a;
+          padding: 0.75rem 2rem;
+
+          small {
+            font-size: 70%;
+            font-weight: 400;
+            color: #999;
+          }
+
+          h2 {
+            margin: 0;
+          }
+
+          ul {
+            padding-top: 15px;
+            list-style: none;
+            font-size: 16px;
+            padding-inline-start: 0px;
+          }
+        }
+      }
+
+      .pro-card {
+        border: 2px solid;
+
+        .card-header {
+          background-color: #293743;
+          color: #fbcabc;
+        }
+      }
+      @media screen and (max-width: 850px) {
+        flex-direction: column;
+
+        .card {
+          width: 100%;
+          margin: 0 auto 15px auto;
+        }
+      }
+    }
+    .paypal-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .pricingTable {
+    text-align: center;
+    background: #1c2932;
+    margin: 20px 15px;
+    box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.1);
+    padding-bottom: 40px;
+    border-radius: 10px;
+    color: #434a5b;
+    transform: scale(1);
+
+    transition: all 0.5s ease 0s;
+  }
+
+  .pricingTable:hover {
+    transform: scale(1.05);
+    z-index: 1;
+  }
+
+  .pricingTable .pricingTable-header {
+    padding: 40px 0;
+    background: #8f9093;
+    border-radius: 10px 10px 50% 50%;
+    transition: all 0.5s ease 0s;
+  }
+
+  .pricingTable:hover .pricingTable-header {
+    background: #ff9624;
+  }
+
+  .pricingTable .pricingTable-header i {
+    font-size: 50px;
+    color: #858c9a;
+    margin-bottom: 10px;
+    transition: all 0.5s ease 0s;
+  }
+
+  .pricingTable .price-value {
+    font-size: 35px;
+    color: #ff9624;
+    transition: all 0.5s ease 0s;
+  }
+
+  .pricingTable .month {
+    display: block;
+    font-size: 14px;
+    color: #3e3e3f;
+  }
+
+  .pricingTable:hover .month,
+  .pricingTable:hover .price-value,
+  .pricingTable:hover .pricingTable-header i {
+    color: #5d5b5b;
+  }
+
+  .pricingTable .heading {
+    font-size: 24px;
+    color: #ff9624;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .pricingTable .pricing-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .pricingTable .pricing-content ul li {
+    line-height: 30px;
+    color: #a7a8aa;
+  }
+
+  .pricingTable .pricingTable-signup a {
+    display: inline-block;
+    font-size: 15px;
+    color: #535050;
+    padding: 10px 35px;
+    border-radius: 20px;
+    background: #ffa442;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+  }
+
+  .pricingTable .pricingTable-signup a:hover {
+    box-shadow: 0 0 10px #ffa442;
+  }
+
+  .pricingTable.blue .heading,
+  .pricingTable.blue .price-value {
+    color: #4b64ff;
+  }
+
+  .pricingTable.blue .pricingTable-signup a,
+  .pricingTable.blue:hover .pricingTable-header {
+    background: #4b64ff;
+  }
+
+  .pricingTable.blue .pricingTable-signup a:hover {
+    box-shadow: 0 0 10px #4b64ff;
+  }
+
+  .pricingTable.red .heading,
+  .pricingTable.red .price-value {
+    color: #ffa442;
+  }
+
+  .pricingTable.red .pricingTable-signup a,
+  .pricingTable.red:hover .pricingTable-header {
+    background: #ffa442;
+  }
+
+  .pricingTable.red .pricingTable-signup a:hover {
+    box-shadow: 0 0 10px #ffa442;
+  }
+
+  .pricingTable.green .heading,
+  .pricingTable.green .price-value {
+    color: #40c952;
+  }
+
+  .pricingTable.green .pricingTable-signup a,
+  .pricingTable.green:hover .pricingTable-header {
+    background: #40c952;
+  }
+
+  .pricingTable.green .pricingTable-signup a:hover {
+    box-shadow: 0 0 10px #40c952;
+  }
+
+  .pricingTable.blue:hover .price-value,
+  .pricingTable.green:hover .price-value,
+  .pricingTable.red:hover .price-value {
+    h1 {
+      color: #292727;
+    }
+  }
+
+  .subscriptionBlue,
+  .subscriptionBlue:hover {
+    background-color: #4b64ff;
+    border-radius: 45px;
+    width: 70%;
+    margin-top: 25px;
+  }
+
+  .subscriptionGreen,
+  .subscriptionGreen:hover {
+    background-color: #40c952;
+    border-color: #40c952;
+    border-radius: 45px;
+    width: 70%;
+    margin-top: 25px;
+  }
+
+  .subscriptionRed,
+  .subscriptionRed:hover {
+    background-color: #ffa442;
+    border-color: #ffa442;
+    border-radius: 45px;
+    width: 70%;
+    margin-top: 25px;
+  }
+
+  @media screen and (max-width: 990px) {
+    .pricingTable {
+      margin: 0 0 20px;
+    }
+  }
+  .cancel-subscription-btn {
+    display: flex;
+
+    span {
+      margin-left: 15px;
+    }
+  }
+}
